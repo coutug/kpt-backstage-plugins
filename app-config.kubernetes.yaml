@@ -51,16 +51,3 @@ configAsData:
 
     # Optional. The service account token to be used when using the 'service-account' auth provider.
     serviceAccountToken: ${CAD_SERVICE_ACCOUNT_TOKEN}
-auth:
-  # see https://backstage.io/docs/auth/ to learn about auth providers
-  providers:
-    google:
-      development:
-        clientId: ${AUTH_GOOGLE_CLIENT_ID}
-        clientSecret: ${AUTH_GOOGLE_CLIENT_SECRET}
-    okta:
-      development:
-        clientId: ${AUTH_OKTA_CLIENT_ID}
-        clientSecret: ${AUTH_OKTA_CLIENT_SECRET}
-        audience: ${AUTH_OKTA_AUDIENCE}
-        authServerId: ${AUTH_OKTA_AUTH_SERVER_ID}
